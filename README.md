@@ -23,8 +23,10 @@ import json
 
 #请求服务器地址
 url = "https://api.jia007.com/api-center/rest/v1.0/yqt/consume"
+
 #商户编号
 appKey = "1051100110000069a"
+
 #商户秘钥
 secretKey = "c93b77ac5c7c4937"
 
@@ -42,10 +44,12 @@ request['orderDate']='2017-11-17 11:28:04'
 request['merchantNo']='1051100110000070'
 request['productName']='测试'
 
-#转换位json请求数据,解决中文乱码
+#转换为json请求数据,解决中文乱码
 requestJson = json.dumps(request,ensure_ascii=False)
+
 #对请求数据进行加密
 data = AesUtils.AESUtil.encryt(requestJson,secretKey)
+
 #发送请求
 response = Client.Client.post(url,data,appKey)
 
