@@ -8,9 +8,9 @@ import json
 #请求服务器地址
 url = "https://api.jia007.com/api-center/rest/v1.0/yqt/consume"
 #商户编号
-appKey = "1051100110000069a"
+appKey = ""
 #商户秘钥
-secretKey = "c93b77ac5c7c4937"
+secretKey = ""
 
 request = {}
 request['requestNo']='1234567890qwertyui12'
