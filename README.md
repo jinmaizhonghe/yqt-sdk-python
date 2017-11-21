@@ -58,5 +58,11 @@ response = AesUtils.AESUtil.decrypt(response,secretKey)
 print  response
 
 #Console打印日志为：
-{"code":"1","orderAmount":"0.01","orderNo":"11171114183109692912","redirectUrl":"weixin://wxpay/bizpayurl?pr\u003d7PYdx1J","message":"受理成功","status":"PROCESS"}
+{"code":"1",
+"orderAmount":"0.01",
+"orderNo":"11171114183109692912",
+"redirectUrl":"weixin://wxpay/bizpayurl?pr\u003d7PYdx1J",
+"message":"受理成功",
+"status":"PROCESS"
+}
 ```
